@@ -144,5 +144,14 @@ function getBook(id) {
 }
 
 const book = getBook(2);
-const { title, author } = book;
-console.log(title, author);
+//book;
+const { title, author, pages, publicationDate, genres, hasMovieAdaptation } =
+  book;
+//console.log(title, author, genres);
+
+// const PrimaryGenre = genres[0];
+// const SecondaryGenre = genres[1];
+
+const [primaryGenre, secondaryGenre, thirdGenre] = genres;
+
+console.log(primaryGenre, secondaryGenre, thirdGenre);
